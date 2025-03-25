@@ -1,4 +1,10 @@
  
+a, button {
+  pointer-events: none;
+  cursor: default;
+}
+
+
 html {
   font-family: 'Font';
   font-family: "Playfair Display", serif;;
