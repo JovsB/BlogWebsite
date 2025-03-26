@@ -4,7 +4,27 @@ a, button {
   cursor: default;
 }
 
+.tm-site-name {
+  position: relative;
+  display: inline-block;
+}
 
+.tm-site-name::before,
+.tm-site-name::after {
+  content: "";
+  display: inline-block;
+  width: 100px; /* Adjust size */
+  height: 100px;
+  background: url('../img/bttfly.png') no-repeat center;
+  background-size: contain;
+  margin: 0 10px;
+}
+
+ 
+.tm-site-name::after {
+  transform: scaleX(-1);
+}
+ 
 html {
   font-family: 'Font';
   font-family: "Playfair Display", serif;;
@@ -71,7 +91,7 @@ p {
 }
 
 .img-fluid {
-  width: 620px;
+  width: 680px;
   height: 410px;
 }
 
